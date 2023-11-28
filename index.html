@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ReWood</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/splitting.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script>
+        document.querySelector('li a[href="/index.html"]').addEventListener('click', function (event) {
+            event.preventDefault(); // 기본 이벤트 동작을 막음
+            const targetElement = document.querySelector('#teamNameSection');
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth' // 부드러운 스크롤 적용
+                });
+            }
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더영역 -->
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo"><a href="index.html">
+                        <img src="img/logo.png" alt="로고">
+                        <img src="img/logo2.png" alt="로고2">
+                    </a></h1>
+                <ul class="gnb">
+                    <li><a href="#">Introduction</a>
+                        <ul class="inner">
+                            <li><a href="#teamNameSection"><span>Team name</span></a></li>
+                            <li><a href="/sub/topick.html"><span>Upcycling Topic</span></a></li>
+                            <li><a href="/sub/vision.html"><span>Team Vision</span></a></li>
+                            <li><a href="/sub/history.html"><span>History</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Product</a>
+                        <ul class="inner">
+                            <li><a href="/sub/materials.html"><span>Materials</span></a></li>
+                            <li><a href="/sub/blueprint.html"><span>Blueprint</span></a></li>
+                            <li><a href="/sub/rendering.html"><span>Rendering</span></a></li>
+                            <li><a href="#productionSection"><span>Production</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PR</a>
+                        <ul class="inner">
+                            <li><a href="/sub/photo.html"><span>Photo</span></a></li>
+                            <li><a href="/sub/video.html"><span>Video</span></a></li>
+                            <li><a href="/sub/article.html"><span>Article</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Join Us</a>
+                        <ul class="inner">
+                            <li><a href="#membersSection"><span>Members</span></a></li>
+                            <li><a href="/sub/review.html"><span>Review</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Support</a>
+                        <ul class="inner">
+                            <li><a href="/sub/guide.html"><span>Guide</a></li>
+                            <li><a href="/sub/faq.html"><span>FAQ</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- 비주얼(헤더 밑 메인슬라이드쇼)영역 -->
+        <section class="visual">
+            <ul class="slide">
+                <li>
+                    =<img src="img/visual1.jpg" alt="">
+                    <div class="txt en">
+                        <div data-splitting>seoulupcycling</div>
+                        <div data-splitting>Excursions</div>
+                    </div>
+                    <a href="#" class="en">REWOOD</a>
+                    <span class="mask a"></span> <span class="mask b"></span> <span class="mask c"></span> <span
+                        class="mask d"></span>
+                </li>
+                <li>
+                    <img src="img/visual2.jpg" alt="">
+                    <div class="txt en">
+                        <div data-splitting>a variety of </div>
+                        <div data-splitting>ingredients</div>
+                    </div>
+                    <a href="#" class="en">REWOOD</a>
+                    <span class="mask a"></span> <span class="mask b"></span> <span class="mask c"></span> <span
+                        class="mask d"></span>
+                </li>
+                <li>
+                    <img src="img/visual3.jpg" alt="">
+                    <div class="txt en">
+                        <div data-splitting>Brainstorming </div>
+                    </div>
+                    <a href="#" class="en">REWOOD</a>
+                    <span class="mask a"></span> <span class="mask b"></span> <span class="mask c"></span> <span
+                        class="mask d"></span>
+                </li>
+
+                <li>
+                    <img src="img/visual4.jpg" alt="">
+                    <div class="txt en">
+                        <div data-splitting>IMAGINE IT,</div>
+                        <div data-splitting>AND BUILD IT</div>
+                    </div>
+                    <a href="#" class="en">REWOOD</a>
+                    <span class="mask a"></span> <span class="mask b"></span> <span class="mask c"></span> <span
+                        class="mask d"></span>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- 컨텐츠영역 -->
+        <section class="contents">
+            <div class="information">
+                <div class="scrollBox" id="scroll">
+                    <a href="#" class="scroll en">Let’s start!<span><img src="img/scrolldown.png" alt=""></span></a>
+                </div>
+                <div id="teamNameSection" class="teamName">
+                    <div class="inner animate" data-animate="motion">
+                        <div class="title">
+                            <div data-splitting class="en"><br>Why ReWood?</div>
+                        </div>
+                        <p class="img"><img src="img/TeamName.png" alt=""></p>
+                        <div class="teamName_p">
+                            <p>
+                                It means going back to the tree.<br>
+                                We made it with the mindset of revitalizing<br> new wooden furniture using waste wooden
+                                chairs.
+                            </p>
+                        </div>
+                    </div>
+                </div><br><br><br><br><br><br><br><br><br>
+
+
+
+                <div id="membersSection" class="inner animate" data-animate="motion">
+                    <div class="title">
+                        <div data-splitting class="en"><br></div>
+                        <div data-splitting class="en">who are we?</div>
+                        <P>Team Member Introduction</P>
+                    </div>
+                </div>
+                <div class="slideBox">
+                    <ul class="slide2">
+                        <li>
+                            <a href="#">
+                                <div class="slide-item">
+                                    <p class="img"><span><img src="img/slide1.jpg" alt=""></span></p>
+                                    <div class="description">Web Page Production<br><br>
+                                        Hello, I'm Han-soo Park<br>
+                                        Welcome to our homepage. <br><br>
+
+
+                                        Contact<br>
+                                        010-9323-2671 <br>
+                                        mnlk93232671@gmail.com
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="slide-item">
+                                    <p class="img"><span><img src="img/slide2.jpg" alt=""></span></p>
+                                    <div class="description">Furniture production<br><br>
+                                        202203637<br>
+                                        2003.02.05<br>
+                                        ESTJ<br><br>
+                                        Contact<br>
+                                        01033263666<br>
+                                        kimmin2525@naver.com<br>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="slide-item">
+                                    <p class="img"><span><img src="img/slide3.jpg" alt=""></span></p>
+                                    <div class="description">English script production<br><br>
+                                        202202149<br>
+                                        1993.04.12<br><br>
+                                        Lotte World Carousel Horse Riding Major<br>
+                                        I am trusting you. Our team members<br>
+                                        I'm sure you'll do well absolutely.<br><br>
+                                        Contact<br>
+                                        01027159288<br>
+                                        ddoldoggy@gmail.com<br>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="slide-item">
+                                    <p class="img"><span><img src="img/slide5.jpg" alt=""></span></p>
+                                    <div class="description">English script production Assistant<br><br>
+                                        201901538<br>
+                                        2000.11.02<br>
+                                        INFJ<br><br>
+                                        Contact<br>
+                                        01028004987<br>
+                                        photocard1102@naver.com<br>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="slide-item">
+                                    <p class="img"><span><img src="img/slide4.jpg" alt=""></span></p>
+                                    <div class="description">Web Page Production Assistant <br><br>
+                                        201803990<br>
+                                        1999.11.27<br>
+                                        INTP<br><br>
+                                        Contact<br>
+                                        01066906246<br>
+                                        kyy13578@naver.com<br>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="productionSection" class="process">
+                <span class="line a"></span><span class="line b"></span><span class="line c"></span>
+                <div class="inner animate" data-animate="motion">
+                    <div class="title">
+                        <div data-splitting class="en">How<br> production?</div>
+                        <P>10 steps in the furniture manufacturing process</P>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/sandpaper.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">2. <br><span>sandpaper</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/decomposition.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">1.<br><span>decomposition</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/making_of_a board.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">3.<br><span>the making <br> of a board</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/sawing.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">4.<br><span>sawing</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/sandpaper2.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">5.<br><span>sandpaper</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/Compensation.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">6.<br><span>Compensation for scratches</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/Gesso.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">7.<br><span>Gesso</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/Patting.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">8.<br><span>Patting</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/light.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">9.<br><span>Attach light</span></h3>
+                            </div>
+                        </a></li>
+                    <li class="animate" data-animate="motion"><a href="#">
+                            <p class="img"><img src="img/Giant_Yarn.jpg" alt=""></p>
+                            <div class="txt">
+                                <h3 class="en">10.<br><span>Attach Giant_Yarn</span></h3>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="view">
+                <div class="inner animate" data-animate="motion">
+                    <div class="title">
+                        <div data-splitting class="en">What <BR>a View!</div>
+                        <P>Exploring Furniture from Every Angle</P>
+                    </div>
+                </div>
+                <p class="symbol animate" data-animate="motion"><img src="img/biglogo.png" a;t=""></p>
+                <ul class="viewList">
+                    <li><a href="#">
+                            <span class="category">360°<br>VIEW</span>
+                            <p class="img"><img src="img/stool.png" alt=""></p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="video animate" data-animate="motion">
+                <div class="inner">
+                    <div class="title  animate" data-animate="motion">
+                        <P>Where </P>
+                        <div data-splitting class="en">can I watch the video?</div>
+                    </div>
+                    <a href="#" class="more en">TO THE TOP</a>
+                    <div class="videoBox">
+                        <iframe width="690" height="500"
+                            src="https://www.youtube.com/embed/rlFTxWVCxfI?si=6dHpPkkeg-2ORi04" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="mask"><span><img src="img/video1.jpg" alt=""></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터영역 -->
+        <footer>
+            <ul>
+                <li>Terms and Conditions of Use</li>
+                <li>Personal information</li>
+                <li>Handling policy</li>
+                <li>Refuse to collect e-mail without permission</li>
+            </ul>
+            <ul>
+                <li>28, Yongmasan-ro 90-gil, Jungnang-gu, Seoul</li>
+                <li>Business registration number: 883-54-00643</li>
+            </ul>
+            <p>Webpage Creation Date 2023.10.31</p>
+        </footer>
+    </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
